@@ -71,7 +71,7 @@ const char * removeWhitespace(const char* strings, size_t Buffer){
 ```
 
 Here is the important part of the code, it receives the strings and the k number of operations and checks if it's possible to make the starting string into the desired string.
-We do this by first cleaning the string of any whitespaces, then getting the size of each string and the common part of both strings(prefix). Then we need to get the difference of the prefix with the size of the starting string and the desired string and sum them up. The result would be the total amount of operations needed to get the starting string into the desired string.
+We do this by first cleaning the string of any whitespaces, then getting the size of each string and the common part of both strings(prefix). Then we need to get the difference of the prefix with the size of the starting string and the desired string and sum them up. The result would be the total amount of operations needed to get the starting string into the desired string. Another way to solve this would be to sum the size of the two strings and see if it's less or equal than k since if that were true it means that we could remove everything from the starting string and add everything to the desired string.
 ```
 const char * ConcatRemove(const char* s, const char* t, int k){
     //Here we remove any whitespace a string may have.
